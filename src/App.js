@@ -13,12 +13,12 @@ function App() {
     console.log(data);
   }
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: "lightblue"}}>
       <h1>Olá Mundo!</h1>
       <Form initialData={initialData} onSubmit={handleSubmit}>
-        <Input name="name" />
-        <Input type="email" name="email" />
-        <Input type="password" name="password" />
+        Nome: <Input name="name" /><br/>
+        E-Mail: <Input type="email" name="email" /><br/>
+        Senha: <Input type="password" name="password" /><br/>
         <button type="submit">Enviar</button>
       </Form>
     </div>
